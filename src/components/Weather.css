@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f0f4f8;
+  background: linear-gradient(135deg, #b3e5fc, #b388ff);
+  min-height: 100vh;
+}
+
+.app-name {
+  font-size: 2.5rem;
+  color: #00796b;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.3); /* Glass effect */
+  backdrop-filter: blur(12px);
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 15px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Floating Card */
+.App:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* City Search Input */
+.city-search {
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 15px 20px 15px 50px; /* Adjust for the icon space */
+  background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+  color: #333;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+
+.city-search::placeholder {
+  color: #5d22a5; /* Lighter placeholder color for contrast */
+}
+
+.city-search:focus {
+  background: rgba(255, 255, 255, 0.4); /* Brighter glass effect on focus */
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+  transform: scale(1.05); /* Slight zoom on focus */
+}
+
+/* Search Icon Inside Input */
+.city-search-icon {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.city-search-icon::before {
+  content: "\f002"; /* FontAwesome search icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #00796b;
+}
+
+/* Search Button */
+.search-bar button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #00796b, #48a999);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+  background: linear-gradient(
+    135deg,
+    #004d40,
+    #388e3c
+  ); /* Change color on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+/* City Name */
+.city-name {
+  font-size: 1.8rem;
+  color: #00796b;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Date Styling */
+.date {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Icon and Temperature */
+.icon-temp {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1e2432;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.deg {
+  font-size: 1.5rem;
+  vertical-align: super;
+  color: #388e3c;
+}
+
+/* Description and Wind Info */
+.des-wind {
+  font-weight: 500;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Error Message */
+.error-message {
+  display: block;
+  text-align: center;
+  color: #d32f2f;
+  font-size: 24px;
+  margin-top: auto;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Loader Spinner */
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Loader > div {
+  margin: 0 auto;
+}
+
+/* Weather Icon Styling */
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+.weather-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

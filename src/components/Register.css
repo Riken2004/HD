@@ -1,0 +1,271 @@
+body {
+  background: linear-gradient(135deg, #73a5ff, #5477f5, #2559a2);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container for the registration form */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Headings */
+h2,
+h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Form setup */
+form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.02);
+}
+
+/* Input fields */
+form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #291b1b;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form input::placeholder {
+  color: #130909;
+}
+
+form input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/*styling for button */
+form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #f7b731, #f76b1c);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.4s, transform 0.3s;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #eab543, #f76b1c);
+  transform: scale(1.05);
+}
+
+button.back-button {
+  width: 50%;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.back-button:hover {
+  background-color: #d32f2f;
+}
+
+/* OTP container */
+.otp-container {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* OTP input */
+.otp-container input {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 20px;
+}
+
+p a {
+  color: #f7b731;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #eab543;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container for the 2FA form */
+.two-fa-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Headings */
+h2 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ff3860;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* fields to enter phone number and OTP */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #180707;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+  color: #0c0808;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Buttons for confirming and sending OTP */
+button {
+  width: 40%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #00c853;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00a94f;
+  transform: scale(1.05);
+}
+
+button.secondary {
+  background-color: #f76b1c;
+}
+
+button.secondary:hover {
+  background-color: #f55f0a;
+}
+
+#recaptcha-container {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-code-container img {
+  border: 5px solid #4b6584;
+  border-radius: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,101 @@
+/* General page background */
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container for the 2FA form */
+.two-fa-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Headings */
+h2 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ff3860;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Input fields for phone and OTP */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Buttons for sending OTP and verifying */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #00c853;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00a94f;
+  transform: scale(1.05);
+}
+
+/* Secondary button */
+button.secondary {
+  background-color: #f76b1c;
+}
+
+button.secondary:hover {
+  background-color: #f55f0a;
+}
+
+#recaptcha-container {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
